@@ -1,13 +1,19 @@
-import { HeroParallaxDemo } from "@/components/Home/Hero/page";
+// Example with Redux or any other global provider
+import { HeroParallaxDemo } from "@/components/Home/page";
 import Navbars from "@/components/Navbar/page";
-import {NextUIProvider} from "@nextui-org/react";
+import { NextUIProvider } from "@nextui-org/react";
+
+
+
 export default function Home() {
   return (
-    <div >
-       <NextUIProvider>
-      <Navbars/>
-        <HeroParallaxDemo/>
-        </NextUIProvider>
-    </div>
+
+      <NextUIProvider>
+        <div>
+          <Navbars />
+          <HeroParallaxDemo />
+        </div>
+      </NextUIProvider>
+
   );
 }

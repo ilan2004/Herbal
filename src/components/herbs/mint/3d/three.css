@@ -1,0 +1,9 @@
+.three{
+    position:relative;
+    padding:0px;
+    height: 100vh !important;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   background-color: #fff;
+}

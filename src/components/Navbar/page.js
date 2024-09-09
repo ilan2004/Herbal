@@ -42,7 +42,7 @@ export default function Navbars() {
           <p className="font-bold text-inherit">Ayush Herbs</p>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/Explore">
+          <Link color="foreground" href="/search">
             Explore
           </Link>
         </NavbarItem>
