@@ -91,7 +91,7 @@
     	
 		
 		
-		<!--customhtml--><!--customhtml-end-->
+		<!--customhtml--><div class='customhotspot' id='AdobeStock_366153001'></div><!--customhtml-end-->
 		
 		<div id="tmp">
 			<div style="width: 100%; height: 100%; overflow: hidden; overflow-y: auto; box-sizing: border-box; position: relative;" id="tmpcontent"></div>
@@ -114,18 +114,23 @@
 			viewer.addUpdateCallback(function(){});
 			
 			/*panoramas*/
-var testpanorama = new PANOLENS.ImagePanorama( "panoramas/testpanorama.jpg" );
-			testpanorama.addEventListener('progress', function(e){
+var AdobeStock_366153001 = new PANOLENS.ImagePanorama( "panoramas/AdobeStock_366153001.jpeg" );
+			AdobeStock_366153001.addEventListener('progress', function(e){
 				$("#loading").show();
 			});
-			testpanorama.addEventListener('load', function(e){
+			AdobeStock_366153001.addEventListener('load', function(e){
 				//$("#loading").fadeOut();
 			});
-			testpanorama.addEventListener('click', function(e){
+			AdobeStock_366153001.addEventListener('click', function(e){
 			});
 
-viewer.add( testpanorama );
-$(document).ready(function(){ ChangePanorama('testpanorama'); });
+var infospotAdobeStock_3661530010 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+					infospotAdobeStock_3661530010.position.set( 4191.97, -2303.10, 1442.24 );
+					AdobeStock_366153001.add(infospotAdobeStock_3661530010);
+infospotAdobeStock_3661530010.addEventListener('click', function(){
+});
+viewer.add( AdobeStock_366153001 );
+$(document).ready(function(){ ChangePanorama('AdobeStock_366153001'); });
 
 /*panoramas-end*/
             
@@ -168,7 +173,9 @@
 			viewer.addUpdateCallback(function(){
 				
 				/*viewerupdatecallback*/
-				/*viewerupdatecallback-end*/
+if(viewer.panorama == AdobeStock_366153001){
+}
+/*viewerupdatecallback-end*/
 				
 				
 			});
@@ -237,8 +244,7 @@
 				$(".customhotspot").fadeOut();
 			}
 
-			/*customjs*/
-			/*customjs-end*/
+			/*customjs*//*customjs-end*/
         </script>
 	</body>
 </html>
