@@ -32,10 +32,10 @@ const ProductCard = ({ id, title, image, discount, isNew, redirectLink }) => (
 
 const ProductGrid = () => {
   const products = [
-    { id: 1, title: "Elegant Watch", image: "/images/watch.jpg", redirectLink: "/mint" },
-    { id: 2, title: "Leather Handbag", image: "/images/handbag.jpg", discount: 15, redirectLink: "/products/leather-handbag" },
-    { id: 3, title: "Wireless Earbuds", image: "/images/earbuds.jpg", redirectLink: "/products/wireless-earbuds" },
-    { id: 4, title: "Smart Fitness Tracker", image: "/images/fitness-tracker.jpg", isNew: true, redirectLink: "/products/fitness-tracker" },
+    { id: 1, title: "Mint", image: "/mint.jpg", redirectLink: "/mint" },
+    { id: 2, title: "Leather Handbag", image: "/lily.jpg", discount: 15, redirectLink: "/products/leather-handbag" },
+    { id: 3, title: "Wireless Earbuds", image: "/moroccan.jpg", redirectLink: "/products/wireless-earbuds" },
+    { id: 4, title: "Smart Fitness Tracker", image: "/oregano.jpg", isNew: true, redirectLink: "/products/fitness-tracker" },
     // Add more products as needed
   ];
 
@@ -43,8 +43,8 @@ const ProductGrid = () => {
     <section className={styles.sectionProducts}>
       <div className={styles.container}>
         <div className={styles.header}>
-          <h3>Exclusive Products</h3>
-          <h2>Special Offers</h2>
+          <h3>Top Herbs</h3>
+          <h2></h2>
         </div>
         <div className={styles.row}>
           {products.map((product) => (

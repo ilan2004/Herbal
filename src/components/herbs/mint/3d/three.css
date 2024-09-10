@@ -1,9 +1,13 @@
-.three{
-    position:relative;
-    padding:0px;
+.three {
+    position: relative;
+    padding: 0;
     height: 100vh !important;
     align-items: center;
     justify-content: center;
     display: flex;
-   background-color: #fff;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), /* Gradient overlay */
+        url('/back.png'); /* Background image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the background image */
 }

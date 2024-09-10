@@ -62,12 +62,10 @@ export const Header = () => {
     (<div
       className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
-        The Ultimate <br /> development studio
+      Virtual Herbal Garden <br />
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
-        We build beautiful products with the latest technologies and frameworks.
-        We are a team of passionate developers and designers that love to build
-        amazing products.
+      Welcome to the Virtual Herbal Garden! Explore the rich world of medicinal plants used in AYUSH through an interactive and immersive digital experience. Learn about the benefits, uses, and cultivation of herbs that have been at the heart of traditional medicine for centuries. Dive into a blend of ancient wisdom and modern technology, designed to educate, inspire, and promote natural health solutions.
       </p>
     </div>)
   );
