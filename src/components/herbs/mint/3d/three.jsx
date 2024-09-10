@@ -9,7 +9,7 @@ const Three = () => {
 
     <div className="three">
         <Object />
-
+        <h1> MINT</h1>
     </div>
 
 

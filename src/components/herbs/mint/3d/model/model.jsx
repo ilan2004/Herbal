@@ -38,7 +38,7 @@ const Model = (props) => {
   return (
     <a.group ref={modelsRef} {...props}>
       <group {...props}>
-      <group scale={0.04}  rotation={[Math.PI / 9, 0, 0]}>
+      <group scale={0.05}  rotation={[Math.PI / 9, 0, 0]}>
           <mesh
             castShadow
             receiveShadow
