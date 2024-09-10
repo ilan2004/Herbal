@@ -1,6 +1,6 @@
 'use client'
 import React, { useRef, useCallback } from 'react';
-import { Canvas, useThree } from '@react-three/fiber'
+import { Canvas, useThree, useFrame } from '@react-three/fiber'
 import { Suspense } from 'react';
 import { OrbitControls, Environment, PerspectiveCamera } from '@react-three/drei'
 import './Object.css'
@@ -25,11 +25,29 @@ const CameraLogger = () => {
   />;
 };
 
+const AnimatedModel = () => {
+  const modelsRef = useRef();
+  
+  useFrame((state) => {
+    const t = state.clock.getElapsedTime();
+    modelsRef.current.position.y = Math.sin(t * 0.5) * 0.05;
+  });
+
+  return (
+    <group ref={modelsRef} position={[0, -0.5, 0]}>
+      <Model />
+    </group>
+  );
+};
+
 const Scene = () => {
+  const spotLightRef = useRef();
+  const pointLightRef = useRef();
+
   return (
     <>
+
       
-      {/* Set up the camera with the desired rotation */}
       <PerspectiveCamera 
         makeDefault 
         position={[0, 0, 5]}
@@ -37,22 +55,46 @@ const Scene = () => {
         rotation={[-0.7858795112270429, 0.031017384013626914, 0.031032315362367228]}
       />
 
-      {/* Enhanced studio-like lighting setup */}
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={1.2} color="#ffffff" />
-      <directionalLight position={[-5, 5, -5]} intensity={1} color="#ffffff" />
-      <spotLight position={[0, 10, 0]} intensity={1.5} penumbra={1} angle={Math.PI / 4} />
-      
-      {/* Soft fill light */}
-      <pointLight position={[-5, 0, -5]} intensity={0.5} color="#ffffff" />
+      <ambientLight intensity={0.2} color="#e0f2e0" />
 
-      {/* Environment for realistic reflections */}
-      <Environment preset="studio" />
+      <directionalLight 
+        position={[5, 5, 2]} 
+        intensity={1} 
+        color="#ffffff"
+        castShadow
+        shadow-mapSize-width={1024}
+        shadow-mapSize-height={1024}
+      />
 
-      {/* Green plant model */}
-      <Model />
+      <directionalLight position={[-5, 3, -2]} intensity={0.6} color="#c9e8ff" />
+
+      <spotLight
+        ref={spotLightRef}
+        position={[-2, 7, 3]}
+        angle={Math.PI / 6}
+        penumbra={1}
+        intensity={1.5}
+        color="#9BEBAA"
+        castShadow
+      />
+
+      <pointLight 
+        ref={pointLightRef}
+        position={[0, -3, 0]} 
+        intensity={0.4} 
+        color="#ffffff" 
+      />
+
+      <Environment preset="sunset" />
+
+      <AnimatedModel />
       
       <CameraLogger />
+
+      <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -1, 0]} receiveShadow>
+        <planeGeometry args={[100, 100]} />
+        <shadowMaterial opacity={0.4} />
+      </mesh>
     </>
   );
 };
