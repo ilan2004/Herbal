@@ -47,7 +47,7 @@ export default function Navbars() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/mint/index.html" aria-current="virtual">
+          <Link href="/virtual/index.html" aria-current="virtual">
           Virtual Tours
           </Link>
         </NavbarItem>
