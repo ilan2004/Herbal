@@ -18,6 +18,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(
+    135deg,               /* Direction of the gradient */
+    rgba(164, 241, 164, 0.3), /* Light green at 30% opacity */
+    rgba(43, 137, 43, 0.2)    /* Darker green at 20% opacity */
+  );
   
 }
 
