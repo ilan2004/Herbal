@@ -8,94 +8,94 @@ export function HeroParallaxDemo() {
 export const products = [
   {
     title: "Moonbeam",
-    link: "https://gomoonbeam.com",
+    link: "/",
     thumbnail:
       "/goo.jpg",
   },
   {
     title: "Cursor",
-    link: "https://cursor.so",
+    link: "/",
     thumbnail:
-      "/lily.jpg",
+      "/sho.jpg",
   },
   {
-    title: "Rogue",
-    link: "https://userogue.com",
+    title: "",
+    link: "/",
     thumbnail:
       "/mint.jpg",
   },
 
   {
-    title: "Editorially",
-    link: "https://editorially.org",
+    title: "/",
+    link: "/",
     thumbnail:
       "/mon.jpg",
   },
   {
-    title: "Editrix AI",
-    link: "https://editrix.ai",
+    title: "",
+    link: "/",
     thumbnail:
       "/oregano.jpg",
   },
   {
-    title: "Pixel Perfect",
-    link: "https://app.pixelperfect.quest",
+    title: "",
+    link: "/",
     thumbnail:
       "/moroccan.jpg",
   },
 
   {
-    title: "Algochurn",
-    link: "https://algochurn.com",
+    title: "",
+    link: "",
     thumbnail:
       "/parsely.jpg",
   },
   {
-    title: "Aceternity UI",
-    link: "https://ui.aceternity.com",
+    title: "",
+    link: "",
     thumbnail:
       "/sho.jpg",
   },
   {
-    title: "Tailwind Master Kit",
-    link: "https://tailwindmasterkit.com",
+    title: "",
+    link: "",
     thumbnail:
       "/stinging.jpg",
   },
   {
-    title: "SmartBridge",
-    link: "https://smartbridgetech.com",
+    title: "",
+    link: "",
     thumbnail:
       "/sho.jpg",
   },
   {
-    title: "Renderwork Studio",
-    link: "https://renderwork.studio",
+    title: "",
+    link: "",
     thumbnail:
       "/goo.jpg",
   },
 
   {
-    title: "Creme Digital",
-    link: "https://cremedigital.com",
+    title: "",
+    link: "",
     thumbnail:
       "/mint.jpg",
   },
   {
-    title: "Golden Bells Academy",
-    link: "https://goldenbellsacademy.com",
+    title: "",
+    link: "",
     thumbnail:
       "/mon.jpg",
   },
   {
-    title: "Invoker Labs",
-    link: "https://invoker.lol",
+    title: "",
+    link: "",
     thumbnail:
       "/oreagano.jpg",
   },
   {
-    title: "E Free Invoice",
-    link: "https://efreeinvoice.com",
+    title: "",
+    link: "",
     thumbnail:
       "/mint.jpg",
   },

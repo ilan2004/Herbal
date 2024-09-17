@@ -10,6 +10,24 @@ body{
 a{
     color: inherit;
 }
+/* Styling for the hotspot label */
+.hotspot-label {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background */
+    color: #fff;  /* White text */
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    max-width: 150px;
+    line-height: 1.5;
+}
+
+.hotspot-label h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #00FF7F; /* A basil-like color */
+}
 
 .alert{
     padding: 15px;
